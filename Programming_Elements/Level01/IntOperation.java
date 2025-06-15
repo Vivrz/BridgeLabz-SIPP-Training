@@ -4,7 +4,7 @@ public class IntOperation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Take user input for a, b, and c
+      
         System.out.print("Enter value for a: ");
         int a = scanner.nextInt();
         
@@ -14,13 +14,13 @@ public class IntOperation {
         System.out.print("Enter value for c: ");
         int c = scanner.nextInt();
 
-        // Perform the integer operations
-        int result1 = a + b * c;      // Multiplication has higher precedence than addition
-        int result2 = a * b + c;      // Multiplication before addition
-        int result3 = c + a / b;      // Division before addition (integer division)
-        int result4 = a % b + c;      // Modulus before addition
+        
+        int result1 = a + b * c;     
+        int result2 = a * b + c;      
+        int result3 = c + a / b;      
+        int result4 = a % b + c;      
 
-        // Print the results
+      
         System.out.println("The results of Int Operations are:");
         System.out.println("a + b * c = " + result1);
         System.out.println("a * b + c = " + result2);

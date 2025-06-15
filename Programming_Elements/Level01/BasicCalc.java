@@ -17,15 +17,14 @@
             double multiplication = number1 * number2;
             double division;
 
-            // Handle division by zero
             if (number2 != 0) {
                 division = number1 / number2;
             } else {
                 System.out.println("Division by zero is undefined!");
-                return; // Exit if division is invalid
+                return;
             }
 
-            // Print the results
+  
             System.out.printf(
                 "\nThe addition, subtraction, multiplication, and division of %.2f and %.2f is:\n" +
                 "Addition: %.2f\n" +
@@ -35,6 +34,6 @@
                 number1, number2, addition, subtraction, multiplication, division
             );
 
-            scanner.close(); // Close the scanner to prevent resource leaks
+            scanner.close(); 
         }
     } 
