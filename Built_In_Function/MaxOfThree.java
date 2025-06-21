@@ -1,4 +1,4 @@
-package Built_In;
+package Built_In_Function;
 import java.util.Scanner;
 
 public class MaxOfThree {
@@ -17,8 +17,12 @@ public class MaxOfThree {
     // Function to get input from the user
     public static int getInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print(prompt);
-        return scanner.nextInt();
+        try {
+            System.out.print(prompt);
+            return scanner.nextInt();
+        } finally {
+            scanner.close();
+        }
     }
 
     // Function to calculate the maximum of three numbers

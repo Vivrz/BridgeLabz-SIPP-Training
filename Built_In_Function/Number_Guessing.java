@@ -1,4 +1,4 @@
-package Built_In;
+package Built_In_Function;
 import java.util.Random;
 import java.util.Scanner;
 public class Number_Guessing {
